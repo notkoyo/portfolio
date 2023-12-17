@@ -46,8 +46,8 @@ body {
     right: auto;
 }
 
-.logo h2 {
-    font-size: 1.5rem;
+.logo h1 {
+    font-size: 1.2rem;
 }
 
 .navbar {
@@ -78,10 +78,25 @@ body {
     text-decoration: none;
     color: #000;
 }
+  
+/* Tech Stack Styles */
 
-/* Content Styles */
+.techstack {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 8rem;
+}
 
+.techstack h4 {
+    border-right: solid 1px #000;
+    padding-right: 1.5rem;
+}
 
-
+.techstack li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 .7rem;
+}
 
 
