@@ -1,102 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
-@media
-(prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 html {
-    overflow-y: hidden;
-    box-sizing: border-box;
+  overflow-y: hidden;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
-    color: #000;
-    min-height: 100vh;
-    margin: 0;
-    cursor: default;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  margin: 0;
+  cursor: default;
 }
 
 /* Navbar Styles */
 
 .hover-effect {
-    display: inline-block;
-    padding-bottom: .25rem;
-    position: relative;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
 }
 
 .hover-effect::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #000;
-    transition: width .25s ease-out;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.25s ease-out;
 }
 
 .hover-effect:hover::before {
-    width: 100%;
-    left: 0;
-    right: auto;
+  width: 100%;
+  left: 0;
+  right: auto;
 }
 
-.logo h1 {
-    font-size: 1.2rem;
+.logo h2 {
+  font-size: 1.2rem;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 3rem;
-    height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+  height: 70px;
 }
 
 .navlinks {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .navlinks ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .navlinks li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 .5rem;
-    transition: .5s ease;
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.5rem;
+  transition: 0.5s ease;
 }
 
 .navlinks li a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
-  
+
 /* Tech Stack Styles */
 
 .techstack {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-left: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .techstack h4 {
-    border-right: solid 1px #000;
-    padding-right: 1.5rem;
+  border-right: solid 1px #000;
+  padding-right: 1.5rem;
 }
 
 .techstack li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 .7rem;
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.7rem;
 }
 
+/* Container */
 
+.container {
+    min-width: 600px;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: fit-content;
+    margin: 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.hero-buttons {
+    margin-bottom: 2rem;
+}
+
+.hero-buttons a {
+    padding-right: .5rem;
+}
+
+.portrait img {
+    max-width: 250px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+/* Intro */
+
+.intro h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
